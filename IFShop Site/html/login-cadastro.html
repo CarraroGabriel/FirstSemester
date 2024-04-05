@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style-login.css" />
+    <title>Acesse Sua Conta | IFShop</title>
+  </head>
+
+    <body>
+<!--Cabeçalho-->
+        <header id="cabecalho">
+        <!--Adição do Dark Theme-->
+                <div class="darktheme">
+                    <input type="checkbox" class="checkbox-dark" id="check-dark">
+                    <label class="label-dark" for="check-dark">
+                        <img src="../img/icones/icons8-lua-50.png" alt="escuro">
+                        <img src="../img/icones/icons8-sol-50.png" alt="claro">  
+                        <div class="ball"></div>
+                    </label>
+                </div>
+        
+        <!--Adição da Aba de Suporte-->
+                <div id="suporte">
+        <!--Quem Somos-->
+                    <a id="quem-somos" href="html/quem-somos.html">
+                        <img src="../img/icones/info.png" alt="">
+                        <p>Quem somos</p>
+                    </a>
+        <!--Atendimento-->
+                    <a id="atendimento" href="#">
+                        <img src="../img/icones/atendimento.png" alt="">
+                        <p>Atendimento</p>
+                    </a>
+                </div>
+        <!--Adição das Redes Sociais-->
+                <div id="redes-sociais">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="../img/icones/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="../img/icones/twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/">
+                                <img src="../img/icones/youtube.png" alt="youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="../img/icones/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </header>
+    <!--Banner-->
+        <section id="banner">
+    <!--Adição do Menu (Burger)-->
+                <nav id="menu">
+                    <a href="#">
+                        <button id="menu-btn"><img src="..//img/menu.png" alt=""></button>
+                    </a>
+    <!--Menu Mobile-->
+                    <div class="mobile-menu">
+                        <ul>
+                            <li class="nav-item"><a href="#">PC Gamer</a></li>
+                            <li class="nav-item"><a href="#">Consoles</a></li>
+                            <li class="nav-item"><a href="#">Smartphones</a></li>
+                            <li class="nav-item"><a href="#">Hardwares</a></li>
+                            <li class="nav-item"><a href="#">Refrigeração</a></li>
+                            <li class="nav-item"><a href="#">Periféricos</a></li>
+                            <li class="nav-item"><a href="#">Gabinetes</a></li>
+                            <li class="nav-item"><a href="#">Monitores</a></li>
+                            <li class="nav-item"><a href="#">Cadeira Gamer</a></li>
+                            <li class="nav-item"><a href="#">Mesa Gamer</a></li>
+                        </ul>
+
+                        <a class="mobile-login" href="html/login-cadastro.html">
+                            <button >Login/Cadastre-se</button>
+                            </a>
+
+                            <ul id="mobile-redes">
+                                <li>
+                                    <a href="https://www.instagram.com/">
+                                        <img src="../img/icones/instagram.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/">
+                                        <img src="../img/icones/twitter.png" alt="twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/">
+                                        <img src="../img/icones/youtube.png" alt="youtube">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="ajuste-fb" href="https://www.facebook.com/">
+                                        <img src="../img/icones/facebook.png" alt="facebook">
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </nav>
+    <!--Adição da Logo-->
+                    <a href="../index.html">
+                    <img id="logo" src="../img/logo1.png" alt="">
+                    </a>
+        <!--Inputs do Banner-->
+                <div id="inputs">
+        <!--Busca-->
+                    <input id="buscar" type="text" placeholder="Pesquise seu produto">
+        <!--Login/Cadastro-->
+                    <a href="../html/login-cadastro.html">
+                    <button class="login-btn">Login/Cadastre-se</button>
+                    </a>
+                </div>
+        <!--Carrinho-->
+                <a href="#">
+                    <img id="carrinho-icone" src="../img/icones/carrinho.png" alt="">
+                </a>
+        </section>
+    <!--Login-->
+        <div id="container-login">
+            <form id="login">
+                <div id="form-header">
+                    <h1>Login</h1>
+                </div>
+                <div id="redes-sociais-login">
+                    <a href="#">
+                        <img src="../img/icones/facebook.png" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="../img/icones/icons8-google-logo-50.png" alt="google">
+                    </a>
+                </div>
+
+                <div id="input">
+                    <div class="input-box">
+                        <label for="name">
+                            E-mail, CPF ou CNPJ
+                            <div class="input-field">
+                                <img src="../img/icones/icons8-usuário-50.png" alt="user">
+                                <input type="text" name="name" id="user">
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">
+                            Senha
+                            <div class="input-field">
+                                <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+                                <input type="password" name="senha" id="senha">
+                            </div>
+                        </label>
+                        
+                        <div id="esqueceu-senha">
+                            <a href="#">
+                            Esqueceu sua Senha?  
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" id="login-btn">
+                    Entrar
+                </button>
+            </form>
+
+            <div id="cadastrar">
+                <div id="cadastro-header">
+                <h1>Novo Usuário</h1>
+                </div>
+                <img src="../img/icones/icons8-adicionar-usuário-masculino-50.png" alt="cadastrar">
+                <p>Crie sua conta para aproveitar todos os benefícios de nossa loja!</p>
+                <button type="submit" id="cadastro-btn">
+                    <a href="../html/cadastro.html">
+                    Cadastre-se
+                    </a>
+                </button>
+            </div>
+        </div>
+
+    <!--Footer-->
+        <footer>
+            <div id="footer-content">
+            <div id="footer-contacts">
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Institucional</h3>
+                    </li>
+                    <li>
+                        <a href="../html/quem-somos.html" class="footer-link">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Trabalhe Conosco</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Termos e Condições</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Política de Cookies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Política de Trocas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Política de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Central do Cliente</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Minha Conta</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Pedidos</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Ajuda</h3>
+                    </li>
+                    <li>
+                        <p>Horário de Atendimento: Segunda a Sexta <br> das 08:00-18:00</p>
+                    </li>
+                    <li>
+                        <p>Central SAC: (51) 9XXXX-XXXX</p>
+                    </li>
+                    <li>
+                        <p>E-mail: faleconosco@ifshop.com.br</p>
+                    </li>
+                </ul>
+
+
+                <div id="certificados">
+                    <h3>Certificados de Segurança</h3>
+                    <a href="#" class="footer-link">
+                        <img src="../img/icones/ra100.png" alt="reclame aqui">
+                    </a>
+                    <a href="#" class="footer-link">
+                        <img src="../img/icones/google-site-seguro.png" alt="google segurança">
+                    </a>
+                    <a href="#" class="footer-link">
+                        <img src="../img/icones/ebit.png" alt="e-bit">
+                    </a>
+                    <a href="#" class="footer-link">
+                        <img src="../img/icones/site-blindado_large.png" alt="site blindado">
+                    </a>
+                </div>
+
+                <div id="pagamento">
+                    <h3>Formas de Pagamento</h3>
+                        <img src="../img/icones/logo-pix-png-1024x1024.png" class="footer-link" alt="pix">
+                        <img src="../img/icones/mercado-pago-logo__38687_std.png" class="footer-link" alt="mercadopago">
+                        <img src="../img/icones/nupay-logo-0.png" class="footer-link" alt="nupay">
+                </div>
+
+                <div id="aplicativo">
+                    <h3>Baixe o Aplicativo</h3>
+                    <a href="play.google.com/store/" class="footer-link">
+                        <img src="../img/icones/icons8-google-play-50.png" alt="google-play">
+                    </a>
+                    <a href="https://www.apple.com/br/app-store/" class="footer-link">
+                        <img src="../img/icones/icons8-apple-app-store-50.png" alt="app-store">
+                    </a>
+                </div>
+
+                <div id="redes-footer">
+                    <div><h3>Siga-nos</h3></div>
+                        <ul>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <img src="../img/icones/instagram.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <img src="../img/icones/twitter.png" alt="twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <img src="../img/icones/youtube.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-link">
+                                    <img src="../img/icones/facebook.png" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+
+            </div>
+
+            <div id="copyright">
+                <h1>
+                    <img id="logo" src="../img/logo1.png" alt="logo">
+                </h1>
+                <p>IFShop Informática</p>
+                <p>CNPJ: xx.xxx.xxx/xxxx-xx | Gravataí-RS</p>
+                <p>&copy; 2023 IFShop. | Todos os Direitos Reservados.</p>
+            </div>
+
+        </footer>
+
+        <script type="text/javascript" src="../js/scripts.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+(ENG)
+Description: The work consists of developing an e-commerce website, using only JavaScript, HTML and CSS technologies. 
+The use of any framework that assists in the development of the work is not permitted. The work will be developed individually. 
+You can seek help from tutorials on the internet, but work copied from the internet or from colleagues will not be accepted. 
+The work must contain at least the following characteristics:
+
+• 4 (four) pages linked together;
+• 1 Table – 0.5 points;
+• 1 List – 0.5 points;
+• Images, Audios and Videos – 1.0 points;
+• 1 Form with at least 6 fields of different types – 1.0 point;
+• Styling and pleasant layout of pages with CSS – 3.0 points;
+• Responsive Layout for at least two devices – 1.0 point;
+• Add 6 different events with JS – 3.0 points.
+
+
+
+
+(PT-BR)
+Descrição: O trabalho consiste em desenvolver um site de comercio eletrônico,
+utilizando apenas as tecnologias JavaScript, HTML e CSS. Não é permitido a utilização de
+nenhum framework que auxilie no desenvolvimento do trabalho. O trabalho será desenvolvido de
+forma individual. Pode buscar auxilio de tutoriais na internet, porém não serão aceitos trabalhos
+copiados da internet ou de colegas. O trabalho deve conter no mínimo as seguintes características:
+
+• 4 (quatro) páginas lincadas umas com as outras;
+• 1 Tabela – 0,5 pontos;
+• 1 Lista – 0,5 pontos;
+• Imagens, Áudios e Vídeos – 1,0 pontos;
+• 1 Formulário de no mínimo 6 campos de diferentes tipos – 1,0 ponto;
+• Estilização e layout agradável das páginas com CSS – 3,0 pontos;
+• Layout Responsivo para pelo menos dois dispositivos – 1,0 ponto;
+• Adicionar 6 eventos diferentes com o JS – 3,0 pontos.

@@ -1,0 +1,576 @@
+﻿<!--Criação do Site IFShop E-Commerce
+    Aluno: Gabriel Carraro-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFShop</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body onload="alert('Seja muito bem-vindo(a)')">
+<!--Cabeçalho-->
+    <header id="cabecalho">
+<!--Adição do Dark Theme-->
+        <div class="darktheme">
+            <input type="checkbox" class="checkbox-dark" id="check-dark">
+            <label class="label-dark" for="check-dark">
+                <img src="img/icones/icons8-lua-50.png" alt="escuro">
+                <img src="img/icones/icons8-sol-50.png" alt="claro">  
+                <div class="ball"></div>
+            </label>
+        </div>
+
+<!--Adição da Aba de Suporte-->
+        <div id="suporte">
+<!--Quem Somos-->
+            <a id="quem-somos" href="html/quem-somos.html">
+                <img src="img/icones/info.png" alt="">
+                <p>Quem somos</p>
+            </a>
+<!--Atendimento-->
+            <a id="atendimento" href="#">
+                <img src="img/icones/atendimento.png" alt="">
+                <p>Atendimento</p>
+            </a>
+        </div>
+<!--Adição das Redes Sociais-->
+        <div id="redes-sociais">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <img src="img/icones/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/">
+                        <img src="img/icones/twitter.png" alt="twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/">
+                        <img src="img/icones/youtube.png" alt="youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img src="img/icones/facebook.png" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+ <!--Banner-->
+    <section id="banner">
+<!--Adição do Menu (Burger)-->
+        <nav id="menu">
+                <button id="menu-btn"><img src="img/menu.png" alt=""></button>
+<!--Menu Mobile-->
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#">PC Gamer</a></li>
+                    <li class="nav-item"><a href="#">Consoles</a></li>
+                    <li class="nav-item"><a href="#">Smartphones</a></li>
+                    <li class="nav-item"><a href="#">Hardwares</a></li>
+                    <li class="nav-item"><a href="#">Refrigeração</a></li>
+                    <li class="nav-item"><a href="#">Periféricos</a></li>
+                    <li class="nav-item"><a href="#">Gabinetes</a></li>
+                    <li class="nav-item"><a href="#">Monitores</a></li>
+                    <li class="nav-item"><a href="#">Cadeira Gamer</a></li>
+                    <li class="nav-item"><a href="#">Mesa Gamer</a></li>
+                </ul>
+
+                <a class="mobile-login" href="html/login-cadastro.html">
+                    <button >Login/Cadastre-se</button>
+                    </a>
+
+                    <ul id="mobile-redes">
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="img/icones/instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="img/icones/twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/">
+                                <img src="img/icones/youtube.png" alt="youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="ajuste-fb" href="https://www.facebook.com/">
+                                <img src="img/icones/facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+<!--Adição da Logo-->
+        <a href="index.html">
+            <img id="logo" src="img/logo1.png" alt="">
+            </a>
+<!--Inputs do Banner-->
+        <div id="inputs">
+<!--Busca-->
+            <input id="buscar" type="text" placeholder="Pesquise seu produto">
+<!--Login/Cadastro-->
+            <a href="html/login-cadastro.html">
+            <button class="login-btn">Login/Cadastre-se</button>
+            </a>
+        </div>
+<!--Carrinho-->
+        <a href="#">
+            <img id="carrinho-icone" src="img/icones/carrinho.png" alt="">
+        </a>
+    </section>
+<!--Barra de Atalhos-->
+    <section id="barra-atalhos">
+        <div id="atalhos">
+            <ul>
+                <li><a href="#">PC Gamer</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Hardwares</a></li>
+                <li><a href="#">Refrigeração</a></li>
+                <li><a href="#">Periféricos</a></li>
+                <li><a href="#">Gabinetes</a></li>
+                <li><a href="#">Monitores</a></li>
+                <li><a href="#">Cadeira Gamer</a></li>
+                <li><a href="#">Mesa Gamer</a></li>
+            </ul>
+        </div>
+    </section>
+
+<!--Seção Lançamentos-->
+    <br><h1>Garanta os mais novos lançamentos do mercado:</h1><br>
+    <section id="video">
+        <video width="1900" height="600" controls autoplay muted>
+            <source src="video/Lançamentos.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+<!--Seção de Destaques da Loja-->
+    <br><br><h1>Destaques da Loja:</h1>
+    <section id="destaques">
+        <button id="voltar"><img src="img/icones/icons8-flecha-50.png" alt="prev"></button>
+
+        <div class="card-dest">
+                <div class="dest-img on">
+                    <h3>AMD Ryzen 7 5700x</h3>
+                    <img src="img/produtos destaque/AMD Ryzen 7 5700X.png" alt="AMD Ryzen 7 5700x">
+                    <p>&#9733;&#9733;&#9733;&#9733;&#9733; (1078)</p>
+                </div>
+            <div class="dest-img">
+                <h3>Playstation 5 825GB</h3>
+                    <img src="img/produtos destaque/Playstation 5.png" alt="Playstation 5">
+                    <p>&#9733;&#9733;&#9733;&#9733;&#9733; (3978)</p>
+                </div>
+                <div class="dest-img">
+                    <h3>Placa de Vídeo Gigabyte RTX 3060Ti 8GB</h3>
+                    <img src="img/produtos destaque/Gigabyte 3060Ti 8GB.png" alt="RTX 3060Ti 8GB">
+                    <p>&#9733;&#9733;&#9733;&#9733;&#9733; (2232)</p>
+                </div>
+                <div class="dest-img">
+                    <h3>Samsung Galaxy S23 Ultra 5G 512GB Preto</h3>
+                    <img src="img/produtos destaque/Samsung Galaxy S23 Ultra 5G 512GB Preto.png" alt="Samsung Galaxy S23">
+                    <p>&#9733;&#9733;&#9733;&#9733;&#9733; (1352)</p>
+                </div>
+                <div class="dest-img">
+                    <h3>Placa de Vídeo Asus RTX 4090 24GB</h3>
+                    <img src="img/produtos destaque/Asus RTX 4090 24GB.png" alt="RTX 4090 24GB">
+                    <p>&#9733;&#9733;&#9733;&#9733;&#9733; (1230)</p>
+                </div>
+        </div>
+    <button id="avancar"><img src="img/icones/icons8-flecha-50.png" alt="next"></button>
+    </section>
+
+<!--Seção Mais Vendidos da Loja-->
+    <br><br><h2>Mais Vendidos:</h2>
+    <main>
+        <div class="card">
+            <img src="img/produtos/AMD Ryzen 7 5700X.png" alt="AMD Ryzen 7 5700X">
+            <div>
+                <h4>Processador AMD Ryzen 7 5700X 3.4GHz (4.6GHz Turbo), 8-Cores 16-Threads, AM4, Sem Cooler, 100-100000926WOF</h4>
+                <span>R$1,249,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="img/produtos/Cadeira_Gamer_Alpha_Gamer_Zeta_5.png" alt="Cadeira Alpha Gamer Zeta">
+            <div>
+                <h4>Cadeira Gamer Alpha Gamer Zeta Black Red - AGZETA-BK-BL</h4>
+                <span>R$699,99</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos destaque/Playstation 5.png" alt="Playstation 5">
+            <div>
+                <h4>Console Playstation 5 Sony, SSD 825GB, Controle sem fio DualSense, Com Mídia Física, Branco - 1214A</h4>
+                <span>R$3,440,90</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/monitor-alienware-aw2723df-white-gallery-2.png" alt="Monitor Gamer Alienware 27''">
+            <div>
+                <h4>Monitor Gamer Alienware 27” QHD AW2723DF</h4>
+                <span>R$5,400,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/mouse11.png" alt="Mouse Logitech G502">
+            <div>
+                <h4>Mouse Gamer Sem Fio Logitech G502 X LIGHTSPEED - Preto</h4>
+                <span>R$759,90</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/placa-de-video-gigabyte-nvidia-geforce-gtx-1660-super-gaming-oc-6gb-gddr6-192-bit-gv-n166sgaming-oc-6gd_94931.png" alt="Placa de Vídeo GTX 1660 Super">
+            <div>
+                <h4>Placa de Vídeo Gigabyte NVIDIA GeForce GTX 1660 Super Gaming OC, 6GB, GDDR6, 192 Bit, GV-N166SGAMING OC -6GD</h4>
+                <span>R$1,499,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos destaque/Galax RTX 3060 12GB.png" alt="Placa Vídeo Gigabyte 3060">
+            <div>
+                <h4>Placa de Vídeo Galax NVIDIA GeForce RTX 3060, 12GB GDDR6, LHR, 1-Click OC, 15GBps, Ray Tracing, DLSS - 36NOL7MD1VOC</h4>
+                <span>R$1,999,90</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/SSD-1TB-Kingston-Nv2-M-2-2280-PCIe-NVMe-Leitura-3500MB-s-Grava-o-2100MB-s-Snv2s-1000g_1686667116_gg-removebg-preview.png" alt="SSD Kingston 1TB Nv2">
+            <div>
+                <h4>SSD KINGSTON 1TB NVME M.2 PCI-E 4.0 SNV2S/1000G LEITURA: 3500MB/S</h4>
+                <span>R$429,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </main><br>
+    <main>
+        <div class="card">
+            <img src="img/produtos/teclado-gamer-mecanico-t-dagger-bora-switch-red-rgb-black-abnt2-t-tgk315-rd_114403.png" alt="Teclado Gamer T-Dagger">
+            <div>
+                <h4>Teclado Gamer Mecânico T-Dagger Bora, Switch Red, RGB, Black, ABNT2, T-TGK315-RD V2</h4>
+                <span>R$189,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="img/produtos/1024.png" alt="Placa de Vídeo MSI Radeon RX 6600 XT">
+            <div>
+                <h4>Placa de Vídeo MSI Radeon RX 6600 XT Gaming X 8G, 16 Gbps, 8GB GDDR6 - Radeon RX 6600 XT GAMING X 8G</h4>
+                <span>R$2,049,99</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/ssd-kingston-2.PNG" alt="SSD Kingston 960Gb Sata 3">
+            <div>
+                <h4>Ssd Kingston A400 960GB Sata 3 6GB/s</h4>
+                <span>R$425,60</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/high_resolution_png-g203-lightsync-gaming-mouse-fob---black.png" alt="Mouse Logitech G203">
+            <div>
+                <h4>Mouse Gamer Logitech G203 LIGHTSYNC - Preto</h4>
+                <span>R$189,90</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/processador-intel-core-i5-10gen-01.png" alt="Processador Intel Core I5 10400">
+            <div>
+                <h4>Processador Intel Core i5 10400, 2.90GHz, (4.30GHz Turbo), 10ª Geração, 6-Cores 12-Threads, LGA 1200, BX8070110400</h4>
+                <span>R$849,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/br-odyssey-neo-g9-g95nc-ls57cg950nlxzd-538250627.png" alt="Monitor Gamer Odyssey Neo G9 57''">
+            <div>
+                <h4>Monitor Gamer Odyssey Neo G9 57"</h4>
+                <span>R$16,624,00</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/1.png" alt="PC Gamer Ryzen 5 5600G GTX 1660 Super">
+            <div>
+                <h4>Pc Gamer Ryzen 5 5600G 16GB (GTX 1660 SUPER) 1TB , 500W 80 Plus, Neologic AMD - NLI83284</h4>
+                <span>R$3,689,90</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/produtos/12.png" alt="Headset HyperX Cloud Stinger S">
+            <div>
+                <h4>Headset Gamer HyperX Cloud Stinger S, 7.1 Surround, Drivers 50mm, USB e P3, Black, HHSS1S-AA-BK/G</h4>
+                <span>R$399,90</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </main>
+
+<!--Tabela de Fretes da Loja-->
+    <br><br><h2>Tabela de Fretes:</h2><br>
+    <p id="p-frete">Confira aqui o frete da nossa transportadora para sua região!</p><br>
+    <section>
+        <div id="frete">
+            <table>
+                <thead>
+                    <th>Região</th>
+                    <th>Valor</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Norte</td>
+                        <td>R$40,00</td>
+                    </tr>
+                    <tr>
+                        <td>Nordeste</td>
+                        <td>R$30,00</td>
+                    </tr>
+                    <tr>
+                        <td>Centro-Oeste</td>
+                        <td>R$25,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sudeste</td>
+                        <td>R$20,00</td>
+                    </tr>
+                    <tr>
+                        <td>Sul</td>
+                        <td>R$15,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+<!--Criação Slider das Marcas-->
+    <br><br><br><h2>Contamos com as Melhores Marcas:</h2>
+    <section id="slider">
+    <!--Marcas do Site-->
+            <div class="slides"> 
+    <!--Botões-->  
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+    <!--Imagens Slides-->   
+            <div class="slide first">
+                    <img src="img/carousel/Nvidia_logo.png" alt="Nvidia">
+                </div>
+            <div class="slide">
+                    <img src="img/carousel/AMD-logo.png" alt="AMD">
+                </div>
+                <div class="slide">
+                    <img src="img/carousel/Logo-Intel-01.png" alt="Intel">
+                </div>
+                <div class="slide">
+                    <img src="img/carousel/redragon.png" alt="Redragon">
+                </div>
+                <div class="slide">
+                    <img src="img/carousel/Razer.png" alt="Razer">
+                </div>
+    <!--Navegação--> 
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+
+            </div>
+
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+
+<!--Criação da Mensagem de Cookies-->
+    <div id="cookies" class="cookies" >
+        <div class="cookies-txt">
+            <p>Este site usa cookies e tecnologia afins, que são pequenos arquivos ou pedaços de texto baixados para um aparelho quando o visitante acessa um website ou aplicativo. Ao utilizar nosso site você está de acordo com a utilização dos cookies para te proporcionar uma melhor experiência.</p>
+        <div class="cookies-btn">
+            <button onclick="concordo()">Concordo</button>
+        </div>   
+        </div>
+    </div>
+
+<!--Footer-->
+    <footer>
+        <div id="footer-content">
+
+            <div id="footer-contacts">
+                <ul class="footer-list">
+                    <li>
+                        <h3>Institucional</h3>
+                    </li>
+                    <li>
+                        <a href="html/quem-somos.html" class="footer-link">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Trabalhe Conosco</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Termos e Condições</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Política de Cookies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Política de Trocas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Política de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Central do Cliente</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Minha Conta</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Pedidos</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Ajuda</h3>
+                    </li>
+                    <li>
+                        <p>Horário de Atendimento: Segunda a Sexta <br>das 08:00-18:00</p>
+                    </li>
+                    <li>
+                        <p>Central SAC: <br> (51) 9XXXX-XXXX</p>
+                    </li>
+                    <li>
+                        <p>E-mail: faleconosco@ifshop.com.br</p>
+                    </li>
+                </ul>
+
+
+                <div id="certificados">
+                    <h3>Certificados de Segurança</h3>
+                    <a href="#" class="footer-link">
+                        <img src="img/icones/ra100.png" alt="reclame aqui">
+                    </a>
+                    <a href="#" class="footer-link">
+                        <img src="img/icones/google-site-seguro.png" alt="google segurança">
+                    </a>
+                    <a href="#" class="footer-link">
+                        <img src="img/icones/ebit.png" alt="e-bit">
+                    </a>
+                    <a href="#" class="footer-link">
+                        <img src="img/icones/site-blindado_large.png" alt="site blindado">
+                    </a>
+                </div>
+
+                <div id="pagamento">
+                    <h3>Formas de Pagamento</h3>
+                        <img src="img/icones/logo-pix-png-1024x1024.png" class="footer-link" alt="pix">
+                        <img src="img/icones/mercado-pago-logo__38687_std.png" class="footer-link" alt="mercadopago">
+                        <img src="img/icones/nupay-logo-0.png" class="footer-link" alt="nupay">
+                </div>
+
+                <div id="aplicativo">
+                    <h3>Baixe o Aplicativo</h3>
+                    <a href="play.google.com/store/" class="footer-link">
+                        <img src="img/icones/icons8-google-play-50.png" alt="google-play">
+                    </a>
+                    <a href="https://www.apple.com/br/app-store/" class="footer-link">
+                        <img src="img/icones/icons8-apple-app-store-50.png" alt="app-store">
+                    </a>
+                </div>
+
+                <div id="redes-footer">
+                    <div><h3>Siga-nos</h3></div>
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/" class="footer-link">
+                                    <img src="img/icones/instagram.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" class="footer-link">
+                                    <img src="img/icones/twitter.png" alt="twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" class="footer-link">
+                                    <img src="img/icones/youtube.png" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" class="footer-link">
+                                    <img src="img/icones/facebook.png" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+
+            </div>
+
+        <div id="copyright">
+            <h1>
+                <img id="logo" src="img/logo1.png" alt="logo">
+            </h1>
+            <p>IFShop Informática</p>
+            <p>CNPJ: xx.xxx.xxx/xxxx-xx | Gravataí-RS</p>
+            <p>&copy; 2023 IFShop. | Todos os Direitos Reservados.</p>
+        </div>
+
+    </footer>
+
+<!--Áudio da Loja-->
+    <audio controls autoplay loop>
+        <source src="audio/videoplayback.mp3" type="audio/mp3">
+    </audio>
+
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>
